@@ -1,0 +1,1 @@
+LightShotScanner
