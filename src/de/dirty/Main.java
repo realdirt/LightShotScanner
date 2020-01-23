@@ -15,17 +15,6 @@ public class Main {
     private String current = "";
     private File file, folder;
 
-    /*
-
-        private boolean randomGen = true;
-    private boolean download = true;
-    private int count = 0;
-    private String start = "zaaaaa";
-    private String end = "zzzzzz";
-    private String outputFile = "links.txt";
-
-     */
-
     public static void main(String[] args) throws Exception {
         new Main(args);
     }
