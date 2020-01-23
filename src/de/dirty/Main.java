@@ -1,5 +1,7 @@
 package de.dirty;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
@@ -97,6 +99,13 @@ public class Main {
             bufferedWriter.close();
             System.out.println("All link was saved in the file:" + file.getAbsolutePath());
         }
+        if (arguments.isDownload()) {
+            for (int i = 0; i < stringList.size(); i++) {
+                BufferedImage image = ImageIO.read(new URL(stringList.get(i)));
+                ImageIO.write(image, "png", new File(folder, (i + 1) + ".png"));
+            }
+            System.out.println("Images saved in: " + folder.getAbsolutePath());
+        }
     }
 
     public void generateRandomLink() {
@@ -109,7 +118,7 @@ public class Main {
 
     public void generateLink() {
         try { // todo: recreate this algorithm because it isn't working.
-            System.out.println(current +":" + arguments.getEnd());
+            System.out.println(current + ":" + arguments.getEnd());
             if (current.equals(arguments.getEnd())) {
                 return;
             }
