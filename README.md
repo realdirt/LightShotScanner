@@ -3,16 +3,16 @@ LightShotScanner
 # !!Attention!!
 This program can cause your IP address to be banned by lightshot
 
-# Description
-This tool can be used to get some random working links/screenshots from lightshot.
-
 # Disclaimer
 This program "pings" the Lightshot web server which can cause the server to block your ip address
 Use at your own risk!
 if you are using the example below evering should be fine.
 
+# Description
+This tool can be used to get some random working links/screenshots from lightshot.
+
 # Usages
-## Exampels
+## Examples
 Use this to download 6 random screenshots the links will be saved in links.txt and the images will be downloaded in the images folder.
 `java -Xmx2G -jar LightShotScanner.jar -rnd -save -download`
 ## Arguments
@@ -26,5 +26,5 @@ Use this to download 6 random screenshots the links will be saved in links.txt a
 * -start <6 characters> | The start characters for generation from a to z for example aaaaaa should not be lower as stop
 * -stop <6 characters> | The start characters for generation from a to z for example zzzzzz should not be higher as start
 
-# Other Informtions
+# Other Information's 
 Currently only the random link generator is working correctly (-rnd). The other mode can be used but does not take all letters into account.
